@@ -110,6 +110,10 @@ p b {
   color: rgb(221, 21, 21);
 }
 
+.justify-text {
+  text-align: justify;
+}
+
 .store-hours-container {
   width: 100%;
   margin: 50px auto;
@@ -145,23 +149,70 @@ h3 {
 
 header {
   margin: 0px auto 10px;
-  padding: 10px 100px;
-
+  padding: 25px 100px;
   background: rgb(221, 221, 221);
 }
 
-header .contact-box h3 {
-  margin: 0;
-  font-size: 20px;
+.card-group-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-header .email-link {
+.card-group {
+  display: flex;
+  justify-content: space-between; /* Distribute the cards evenly */
+  width: 100%; /* Make sure it takes the full width of the container */
+}
+
+.card {
+  flex: 1; /* Ensure each card takes up equal space */
+  margin: 0 10px; /* Add space between the cards */
+}
+
+.busy-cafe-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+}
+
+.make-coffee-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+}
+
+.empty-cafe-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+}
+
+.card-body {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.card-body h2 {
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.card-body h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 3px;
+}
+
+.email-link {
   text-decoration: none;
   color: #000000;
   font-size: 24px;
 }
 
-header .email-link:hover {
+.email-link:hover {
   color: rgb(221, 21, 21);
 }
 
