@@ -1,0 +1,203 @@
+body {
+  background: whitesmoke;
+}
+
+nav {
+  padding: 20px 20px;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #272142;
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
+  color: rgb(221, 21, 21);
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+h1 {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 40px;
+  color: rgb(221, 21, 21);
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.welcome-image-container {
+  width: 100%;
+  height: 50%;
+  margin: 0px 0px 50px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border-radius: 5mm;
+}
+
+.welcome-image-container img {
+  width: 85%;
+  height: auto;
+  display: block;
+  border: 15px solid black;
+  box-sizing: border-box;
+  border-radius: 7mm;
+}
+
+.welcome-text {
+  position: absolute;
+  top: 25px;
+  left: 25%;
+  transform: translateX(-50%);
+  color: white;
+  text-decoration-style: solid;
+  font-family: cursive;
+  font-size: 90px;
+}
+
+.enjoy-text {
+  position: absolute;
+  bottom: 100px;
+  right: 2%;
+  transform: translateX(-50%);
+  color: white;
+  text-decoration-style: solid;
+  font-family: cursive;
+  font-size: 90px;
+}
+
+h2 {
+  font-size: 40px;
+  margin: 50px 10px 0;
+  text-align: center;
+}
+
+.about-us-container {
+  margin: 10px auto 10px;
+  padding: 10px 100px;
+  background: rgb(221, 221, 221);
+}
+
+p {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 10px 100px 0px;
+  padding: 10px 0px 10px;
+}
+
+p b {
+  color: rgb(221, 21, 21);
+}
+
+.store-hours-container {
+  width: 100%;
+  margin: 50px auto;
+  padding: 0px 100px;
+  position: relative;
+  border-radius: 5mm;
+}
+
+.store-hours-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 15px solid black;
+  box-sizing: border-box;
+  border-radius: 7mm;
+}
+
+.store-hours-text {
+  position: absolute;
+  top: 50%;
+  left: 50.5%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+}
+
+header {
+  margin: 0px auto 10px;
+  padding: 10px 100px;
+
+  background: rgb(221, 221, 221);
+}
+
+header .contact-box h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+header .email-link {
+  text-decoration: none;
+  color: #000000;
+  font-size: 24px;
+}
+
+header .email-link:hover {
+  color: rgb(221, 21, 21);
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.map iframe {
+  width: 100%;
+  height: 500px;
+}
+
+footer {
+  margin: 60px 0;
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: black;
+  background: lightgrey;
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  background: rgb(221, 21, 21);
+}
+
+.coder {
+  text-decoration: none;
+  font-size: 14px;
+}
