@@ -243,28 +243,41 @@ header {
 }
 
 .gallery-image {
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 
-.nav-button {
+.nav-left-button,
+.nav-right-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgb(221, 21, 21); /* Red background */
   border: none;
-  font-size: 24px;
+  color: white; /* White text for arrows */
+  font-size: 24px; /* Font size for arrows */
   cursor: pointer;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 50%; /* Makes the button circular */
+  width: 50px; /* Fixed width to make it circular */
+  height: 50px; /* Fixed height to make it circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#prev {
-  left: 10px;
+.nav-left-button {
+  left: calc(10px + 2cm); /* Position the left button */
 }
 
-#next {
-  right: 10px;
+.nav-right-button {
+  right: calc(10px + 2cm); /* Position the right button */
+}
+
+/* Optional: Add hover effect */
+.nav-left-button:hover,
+.nav-right-button:hover {
+  background-color: rgb(185, 11, 11); /* Darker red on hover */
 }
 
 footer {
