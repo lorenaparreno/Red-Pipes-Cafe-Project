@@ -163,7 +163,7 @@ header {
 .card-group {
   display: flex;
   justify-content: space-between; /* Distribute the cards evenly */
-  width: 100%; /* Make sure it takes the full width of the container */
+  width: 100%; /* Ensure it takes the full width of the container */
 }
 
 .card {
@@ -171,21 +171,12 @@ header {
   margin: 0 10px; /* Add space between the cards */
 }
 
-.busy-cafe-image {
-  width: 100%;
-  height: 100%;
-  border-radius: 0px;
-}
-
-.make-coffee-image {
-  width: 100%;
-  height: 100%;
-  border-radius: 0px;
-}
-
+.busy-cafe-image,
+.make-coffee-image,
 .empty-cafe-image {
-  width: 100%;
-  height: 100%;
+  width: 100%; /* Ensure the image fills the width of the card */
+  height: 300px; /* Set the height to a fixed value to maintain square shape */
+  object-fit: cover; /* Make sure the image covers the area without distortion */
   border-radius: 0px;
 }
 
@@ -206,14 +197,22 @@ header {
   margin-top: 3px;
 }
 
+.card-body h5 {
+  font-size: 40px;
+}
+
 .email-link {
   text-decoration: none;
   color: #000000;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .email-link:hover {
   color: rgb(221, 21, 21);
+}
+
+.owner-text {
+  font-size: 20px; /* Same as .email-link */
 }
 
 .map {
@@ -228,6 +227,44 @@ header {
 .map iframe {
   width: 100%;
   height: 500px;
+}
+
+.gallery {
+  position: relative;
+  width: 100%; /* Adjust as needed */
+  height: 400px; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 10px auto 10px;
+  padding: 10px 100px;
+  background: rgb(221, 221, 221);
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#prev {
+  left: 10px;
+}
+
+#next {
+  right: 10px;
 }
 
 footer {
